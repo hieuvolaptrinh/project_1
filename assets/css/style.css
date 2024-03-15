@@ -1,0 +1,122 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/* * chọn tất cả trong html */
+
+/* 
+1.vị trí
+2. kích thước
+3 màu sắc
+4 kiểu dáng
+
+*/
+html{
+    font-family: Arial, Helvetica, sans-serif ;
+    /* sans-serif là chủng font nó sẽ tự tìm cho mình nếu 2 font đầu không có trên may */
+    /* chỉnh kiểu chữ */
+
+}
+#nap .icon_muiten{
+    font-size: 16px;
+}
+#nap{
+    display: inline-block;
+}
+#header{
+    position:fixed;
+    width:100%;
+    height: 46px;
+    background-color: black;
+    color: white;
+    
+}
+#header .search-button{
+    float: right;
+    
+}
+#header .timkiem{
+    font-size: 30px;
+    color:#fff;
+
+    line-height: 46px;
+    margin: 0 16px;
+}
+#header .search-button:hover{
+    background-color: red;
+    cursor: pointer;
+    /* con chuột bấm */
+}
+#nap, .subnav{
+    list-style-type: none;
+    /* bỏ đi dấu chấm của cái thẻ ul */
+}
+#nap>li{
+    display: inline-block;
+}
+#nap li{
+    position: relative;
+
+    /* display: flex;
+    float: left; */
+    /* thẳng hết 1 hàng  */
+}
+#nap >li>a{
+    color:white;
+    text-transform: uppercase;
+}
+#nap li a{
+    /* trong id nap chọn thẻ a là con của thẻ li */
+
+    text-decoration: none;
+    /* bỏ gạch chân đi */
+
+    /* line-height: 46px; */
+    /* căng giữa bằng cái height */
+    
+    padding: 14px 24px;
+    display:block; 
+    /* hoặc sử dụng
+    display:inline-block
+    */
+}
+
+#nap> li:hover> a{
+    background-color: #ccc;
+    color: #000;
+
+}
+#nap li:hover .subnav{
+    display: block;
+}
+#nap .subnav{
+    display: none;
+    /* tạm thời ẩn đi */
+    position:absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px red;
+    min-width: 200px;
+}
+#nap .subnav li:hover a{
+    background-color: #ccc;
+    color: #000;
+}
+#nap .subnav a{
+    color:#000;
+    padding: auto 16px;
+    line-height: 38px;
+    
+}
+
+#slider{
+    min-width: 500px;
+    min-height: 500px;
+
+}
+#content{
+
+}
+#footer{
+
+}
